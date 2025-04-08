@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <style>
+        .form-group {
+            max-width: 300px;
+            width: 100%;
+        }
+        .container {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center text-bg-dark p-3 rounded">
+        <div class="title mb-4">
+            <h1 class="text-center">CALCULATOR</h1>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="num1" class="form-label">First Number:</label>
+            <input type="number" id="num1" class="form-control form-control-sm">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="num2" class="form-label">Second Number:</label>
+            <input type="number" id="num2" class="form-control form-control-sm">
+        </div>
+
+        <div class="mb-3">
+            <label for="operator" class="form-label">Operator:</label>
+            <select id="operator" class="form-select-sm">
+                <option value="+">Addition (+)</option>
+                <option value="-">Subtraction (-)</option>
+                <option value="*">Multiplication (*)</option>
+                <option value="/">Division (/)</option>
+            </select>
+        </div>
+    <button onclick="calculate()" class="btn btn-primary">Calculate</button>
+    <h3 class="mt-4">Result: <span id="result">0</span></h3>
+        
+    </div>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
