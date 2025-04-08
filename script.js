@@ -5,7 +5,7 @@ function calculate() {
     let result = 0;
 
     if (isNaN(num1) || isNaN(num2)) {
-        result = 'Please enter valid numbers.';
+        result = alert('Please Input a Number');
     } else {
         switch (operator) {
             case '+':
